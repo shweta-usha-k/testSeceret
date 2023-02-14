@@ -1,0 +1,10 @@
+﻿jobs:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Te
+env:
+    apikey: ${{ secrets.API_KEY }}
+    run: dotnet test --no-build --verbosity normal
+    working-directory: TESTING DEMO
